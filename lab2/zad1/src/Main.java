@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] tablica = new int[10];
@@ -20,9 +21,21 @@ public class Main {
         for (int i:tablica2) {
             System.out.printf(i+" ");
         }
-        System.out.println("\nZadanie 17: ");
-        System.out.println("Zadanie 24: ");
-        System.out.println("Zadanie 25: ");
+        System.out.println("\nZadanie 17: "+countZeros(tablica2));
+        tablica2=sortArray(tablica2);
+        System.out.printf("Zadanie 24: ");
+        for (int i:tablica2) {
+            System.out.printf(i+" ");
+        }
+        System.out.println("\nZadanie 25: "+checkEquality(tablica,tablica2));
+        System.out.println("Tablica 1");
+        for (int i:tablica) {
+            System.out.printf(i+" ");
+        }
+        System.out.println("\nTablica 2");
+        for (int i:tablica2) {
+            System.out.printf(i+" ");
+        }
     }
     public static int sumaszeregowa(int n){
         int suma = 0;
@@ -89,5 +102,20 @@ public class Main {
             tab2[k]=tab[j-k];
     return tab2;
     }
-    
+    public static int countZeros(int[] tab){
+        int wynik=0;
+        for(int i =0;i<tab.length;i++){
+            if(tab[i]==0)
+                wynik++;
+        }
+        return wynik;
+    }
+    public static int[] sortArray(int[] tab){
+        Arrays.sort(tab);
+        return tab;
+    }
+    public static boolean checkEquality(int[] tab1, int[] tab2){
+        boolean wynik = Arrays.equals(tab1,tab2);
+        return wynik;
+    }
 }
