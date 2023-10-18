@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] tablica = new int[10];
-        for(int i =0;i<10;i++){
+        for(int i =0;i<tablica.length;i++){
             tablica[i]=generateRandomInt()%5;
         }
         int[] tablica2 = new int[10];
@@ -72,20 +72,20 @@ public class Main {
     }
     public static void tablica1(){
         int[] tab = new int[10];
-        for(int i =0;i<10;i++){
+        for(int i =0;i<tab.length;i++){
             tab[i]=i+1;
         }
-        for(int i =0;i<10;i++){
+        for(int i =0;i<tab.length;i++){
             System.out.printf(tab[9-i]+" ");
         }
     }
     public static int tablica2(){
         int kwadrat=0;
         int[] tab = new int[30];
-        for(int i =0;i<30;i++){
+        for(int i =0;i<tab.length;i++){
             tab[i]=i+1;
         }
-        for(int i =0;i<30;i++){
+        for(int i =0;i<tab.length;i++){
             if(Math.round(Math.sqrt(tab[i]))*Math.round(Math.sqrt(tab[i]))==tab[i])
                 kwadrat++;
         }
