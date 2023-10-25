@@ -38,6 +38,10 @@ public class Main {
         Kot kot = new Kot();
         kot = kot.stworzKota("Mruczek");
         System.out.println(kot.imie);
-        System.out.println("Jeśli imie jest puste, obiekt również będzie pusty i niecczytelny");
+        System.out.println("Jeśli imie jest puste, obiekt również będzie pusty i nieczytelny");
+    System.out.println("Zadanie aktywność:");
+        House dom=new House();
+        dom.setAddress("Javowa");
+        System.out.println("Długość adresu: "+dom.getNumber());
     }
 }

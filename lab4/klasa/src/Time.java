@@ -1,6 +1,6 @@
 public class Time{
-    int hours=0;
-    int minutes=0;
+    int hours;
+    int minutes;
     public Time addTime(Time otherTime){
         Time newtime = new Time();
         newtime.hours = hours;
