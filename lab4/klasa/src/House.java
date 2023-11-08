@@ -1,5 +1,5 @@
 public class House {
-    String address;
+    private String address;
     public void setAddress(String adres){
         address=adres;
     }

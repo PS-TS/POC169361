@@ -13,6 +13,8 @@ public class Time{
         newtime.hours+=otherTime.hours;
         if(newtime.hours>23)
             newtime.hours%=24;
+        this.hours=newtime.hours;
+        this.minutes=newtime.minutes;
         return newtime;
     }
 }
