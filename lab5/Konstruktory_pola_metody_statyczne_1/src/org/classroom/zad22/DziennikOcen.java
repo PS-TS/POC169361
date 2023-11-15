@@ -36,7 +36,7 @@ public class DziennikOcen {
         this.oceny.remove(indeks);
     }
     public void sredniaOcen(){
-        int srednia=0;
+        double srednia=0;
         for(int i = 0;i<this.oceny.size();i++){
             srednia+=oceny.get(i);
         }
