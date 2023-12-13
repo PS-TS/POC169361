@@ -1,6 +1,6 @@
 package compare.zad1;
 
-public class Student implements Comparable{
+public class Student implements Comparable<Student>{
     public String name;
     public double averageGrade;
     public int yearofBirth;
@@ -17,4 +17,9 @@ public class Student implements Comparable{
                 '}';
     }
 
+    public int compareTo(Student o) {
+        if(this.averageGrade>o.averageGrade) return 1;
+        if(this.averageGrade==o.averageGrade) return 0;
+        return -1;
+    }
 }
