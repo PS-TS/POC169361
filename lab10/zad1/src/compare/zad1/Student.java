@@ -10,11 +10,7 @@ public class Student implements Comparable<Student>{
     }
 
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", averageGrade=" + averageGrade +
-                ", yearofBirth=" + yearofBirth +
-                '}';
+        return "Student averageGrade=" + averageGrade;
     }
 
     public int compareTo(Student o) {
